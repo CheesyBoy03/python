@@ -1,4 +1,4 @@
-s = str(input('Введите строку: '))
+s = str(input('Entered string: '))
 def solution(s):
     if s == '':
         s = []

@@ -10,7 +10,6 @@ def scramble(s1, s2):
                 res.append(i)
             else:
                 pass
-    s_2 = list(s2)
     res = ''.join(res)
     if set(s2) == set(res):
         return True

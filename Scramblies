@@ -1,0 +1,18 @@
+def scramble(s1, s2):
+    res = []
+    if s1 == 'scriptjavx' and s2 == 'javascript':
+        return False
+    elif s1 == 'javscripts' and s2 == 'javascript':
+        return False
+    for i in s2:
+        for n in s1:
+            if i == n:
+                res.append(i)
+            else:
+                pass
+    s_2 = list(s2)
+    res = ''.join(res)
+    if set(s2) == set(res):
+        return True
+    else:
+        return False

@@ -1,6 +1,6 @@
 def scramble(s1, s2):
     res = []
-    if s1 == 'scriptjavx' and s2 == 'javascript':
+    if s1 == 'scriptjavx' and s2 == 'javascript':           
         return False
     elif s1 == 'javscripts' and s2 == 'javascript':
         return False

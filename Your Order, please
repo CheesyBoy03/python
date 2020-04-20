@@ -1,0 +1,15 @@
+def order(sentence):
+    result = {}
+    sen = sentence.split(' ')
+    for i in sen:
+        for n in i:
+            if n.isdigit():
+               result[n] = i
+    
+    list_keys = list(result.keys())
+    list_keys.sort()
+    res = []
+    for i in list_keys:
+        q = i, ':', result[i]
+        res.append(q[2])
+    return ' '.join(res)

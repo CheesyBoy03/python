@@ -1,0 +1,13 @@
+def expanded_form(num):
+    string = []
+    num = list(str(num))
+    for i in num:
+        if i == '0':
+            pass
+        else:
+            number_of_zeros = len(num) - num.index(i)
+            if number_of_zeros > 1:
+                string.append(i + '0'*(number_of_zeros-1))
+            else:
+                string.append(i)
+    return ' + '.join(string)
